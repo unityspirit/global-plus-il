@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>גלובל פלוס — אתרים פרימיום לעסקים | חיפה</title>
+  <meta name="description" content="גלובל פלוס — יוצרים פתרונות ווב פרימיום שמעבירים את העסק שלך לליגה העליונה. לידים B2B, עיצוב קולנועי, המרה גבוהה. משרד: חיפה, רח׳ בן גוריון 49.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"גלובל פלוס","url":"https://unityspirit.github.io/global-plus-il/","logo":"https://unityspirit.github.io/global-plus-il/assets/logo.png","address":{"@type":"PostalAddress","streetAddress":"רח׳ בן גוריון 49","addressLocality":"חיפה","addressRegion":"מחוז חיפה","postalCode":"3100000","addressCountry":"IL"},"telephone":"+972-4-000-0000","description":"פיתוח אתרים פרימיום ופתרונות ווב לעסקים"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="assets/logo.png" alt="גלובל פלוס" class="loader-logo-img">
+        <span>גלובל <span class="gold">פלוס</span></span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+  </div>
+
+  <!-- CANVAS -->
+  <canvas id="scrollCanvas"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="גלובל פלוס" class="logo-img">
+        <span class="logo-text">גלובל <span class="gold">פלוס</span></span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#" class="nav-link active" data-section="0">ראשי</a>
+        <a href="#" class="nav-link" data-section="1">עלינו</a>
+        <a href="#" class="nav-link" data-section="2">בעיות</a>
+        <a href="#" class="nav-link" data-section="3">פתרונות</a>
+        <a href="#" class="nav-link" data-section="4">תיק עבודות</a>
+        <a href="#" class="nav-link" data-section="5">תהליך</a>
+        <a href="#" class="nav-link" data-section="6">צור קשר</a>
+      </nav>
+      <a href="tel:+97240000000" class="header-cta">לדון בפרויקט</a>
+      <button class="burger" id="burger" aria-label="תפריט"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#" class="nav-link" data-section="0">ראשי</a>
+      <a href="#" class="nav-link" data-section="1">עלינו</a>
+      <a href="#" class="nav-link" data-section="2">בעיות</a>
+      <a href="#" class="nav-link" data-section="3">פתרונות</a>
+      <a href="#" class="nav-link" data-section="4">תיק עבודות</a>
+      <a href="#" class="nav-link" data-section="5">תהליך</a>
+      <a href="#" class="nav-link" data-section="6">צור קשר</a>
+    </nav>
+  </header>
+
+  <div id="ui-layer">
+
+    <!-- 0: HERO -->
+    <section class="page" id="page-0">
+      <div class="page-inner hero-content">
+        <div class="hero-badge">WEB · DESIGN · DIGITAL</div>
+        <h1 class="hero-title">
+          <span class="hero-line1">מעבירים</span>
+          <span class="hero-line2">את העסק</span>
+          <span class="hero-line3 gold-text">לליגה העליונה</span>
+        </h1>
+        <p class="hero-sub">אנחנו יוצרים אתרים פרימיום שלא רק נראים מדהים — הם עובדים כמו מנהל המכירות הטוב ביותר: 24/7, ללא חופשות, ללא שגיאות.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" data-section="6">לדון בפרויקט</a>
+          <a href="#" class="btn btn-outline" data-section="6">אבחון הנישה שלך</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num gold-text">200+</span><span class="stat-label">נישות שכוסו</span></div>
+          <div class="stat"><span class="stat-num gold-text">3×</span><span class="stat-label">צמיחת המרה</span></div>
+          <div class="stat"><span class="stat-num gold-text">48</span><span class="stat-label">שעות עד להשקה</span></div>
+          <div class="stat"><span class="stat-num gold-text">100%</span><span class="stat-label">ערבות לתוצאה</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1: עלינו -->
+    <section class="page" id="page-1">
+      <div class="page-inner">
+        <h2 class="section-title">אודות <span class="gold-text">גלובל פלוס</span></h2>
+        <p class="section-sub">חברה אמיתית. משרד אמיתי. תוצאות אמיתיות.</p>
+        <div class="about-layout-new">
+          <!-- Column 1 (Wide) -->
+          <div class="about-col about-col-wide">
+            <div class="about-main card reveal">
+              <p class="about-lead">אנחנו — צוות שנמאס לו מבינוניות בשוק הדיגיטלי. בזמן שסטודיות אחרות בונות אתרי ויזיטקרד על תבניות מיושנות, אנחנו בונים <strong>נכסים דיגיטליים</strong> שמביאים לידים B2B ומצדיקים תמחור גבוה.</p>
+              <p>כל פרויקט מתחיל בניתוח מעמיק של הנישה: מי הלקוח שלך, למה הוא בוחר במתחרה, ואיך נתקן את זה ויזואלית וטכנית.</p>
+            </div>
+            <div class="niches-section card reveal" style="padding: 24px;">
+              <h3 class="niches-title">בונים אתרים <span class="gold-text">לכל נישה</span></h3>
+              <div class="niches-tags">
+                <span>רפואה</span><span>רפואת שיניים</span><span>ספא</span><span>מסעדות</span><span>HoReCa</span>
+                <span>בנייה</span><span>אדריכלות</span><span>עיצוב פנים</span><span>IT אאוטסורסינג</span>
+                <span>שירותים משפטיים</span><span>ניקיון</span><span>מוסך</span><span>דיטיילינג</span>
+                <span>כושר</span><span>חינוך</span><span>תיירות</span><span>לוגיסטיקה</span><span>ייצור</span>
+                <span>ריהוט בהזמנה</span><span>וטרינריה</span><span>גרומינג</span><span>דפוס</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="about-col">
+            <div class="card reveal"><div class="card-icon">🎯</div><h3>מתמקדים בתוצאות</h3><p>לא "עיצוב יפה", אלא צמיחה מדידה בפניות.</p></div>
+            <div class="card reveal"><div class="card-icon">🌍</div><h3>מכירים את השוק הישראלי</h3><p>מכירים את הספציפיקה של חיפה, תל אביב וירושלים. מתאימים לכל אזור.</p></div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="about-col">
+            <div class="card reveal"><div class="card-icon">⚡</div><h3>מהירות</h3><p>48 שעות מהבריף עד להשקה. בלי משיכת זמן, בלי תיקונים אינסופיים (למעט חגים וסופי שבוע).</p></div>
+            <div class="card reveal"><div class="card-icon">🔒</div><h3>הגנה משפטית</h3><p>גלובל פלוס בע״מ. עובדים עם חוזה הכולל לוחות זמנים וערבויות מוגדרים.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2: בעיות -->
+    <section class="page" id="page-2">
+      <div class="page-inner">
+        <h2 class="section-title">למה <span class="gold-text">אתה מפסיד כסף</span> ברגע זה</h2>
+        <p class="section-sub">אתר מיושן — זה לא אסתטיקה. זה הפסדים ישירים.</p>
+        <div class="problems-grid">
+          <div class="problem-card card reveal">
+            <div class="problem-num">01</div>
+            <h3>תקציב פרסום נשרף לריק</h3>
+            <p><strong>כאב:</strong> גוגל אדס מביא תנועה, אבל אין פניות. הסיבה — האתר לא ממיר.</p>
+            <p class="problem-result">→ העסק הממוצע מפסיד <span class="gold-text">60–80% מתקציב הפרסום</span> בגלל דף נחיתה גרוע.</p>
+          </div>
+          <div class="problem-card card reveal">
+            <div class="problem-num">02</div>
+            <h3>שותפי B2B עוברים למתחרים</h3>
+            <p><strong>כאב:</strong> לקוח עסקי פותח את האתר שלך וסוגר אותו אחרי 3 שניות. עיצוב 2015 = אין אמון = אין עסקה.</p>
+            <p class="problem-result">→ <span class="gold-text">73% מהחלטות B2B</span> מתקבלות אחרי הערכת הנוכחות הדיגיטלית של החברה.</p>
+          </div>
+          <div class="problem-card card reveal">
+            <div class="problem-num">03</div>
+            <h3>אתה לא יכול להצדיק מחיר גבוה</h3>
+            <p><strong>כאב:</strong> הלקוח שואל למה יקר. האתר לא עונה בשבילו — הוא נראה זול יותר ממה שהשירותים שלך שווים.</p>
+            <p class="problem-result">→ אתר פרימיום <span class="gold-text">מוכר את הערך בעצמו</span> לפני השיחה עם המנהל.</p>
+          </div>
+          <div class="problem-card card reveal">
+            <div class="problem-num">04</div>
+            <h3>היעדרות באינטרנט המובייל</h3>
+            <p><strong>כאב:</strong> 78% מהלקוחות הפוטנציאליים שלך גולשים מהטלפון. אם האתר לא מותאם — אתה לא קיים עבורם.</p>
+            <p class="problem-result">→ Mobile-first — לא אופציה. זה <span class="gold-text">הסטנדרט ההכרחי של 2025.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3: פתרונות -->
+    <section class="page" id="page-3">
+      <div class="page-inner">
+        <h2 class="section-title">קולנוע-<span class="gold-text">לנדינג</span></h2>
+        <p class="section-sub">שלוש חבילות. פורמט אחד — קולנוע. זמן ביצוע: <strong class="gold-text">עד 48 שעות.</strong></p>
+        <div class="solutions-grid">
+
+          <!-- חבילה 1 -->
+          <div class="solution-card card reveal" id="pkg-1">
+            <div class="solution-icon">🎬</div>
+            <div class="solution-tag tag-base">סטארט</div>
+            <h3>קולנוע-לנדינג מתבנית</h3>
+            <p class="solution-pitch">תבנית קולנועית מוכנה לנישה שלך. אנחנו מחליפים רק תוכן — טקסט, שירותים, מחירון, פרטי קשר. התוצאה — אתר ברמה עולמית במחיר מקומי ותוך עד 48 שעות.</p>
+            <ul class="solution-features">
+              <li>תבנית לנישה שלך מהספרייה</li>
+              <li>רקע וידאו קולנועי</li>
+              <li>הטקסט, השירותים, המחירון ופרטי הקשר שלך</li>
+              <li>מותאם למובייל + דסקטופ</li>
+            </ul>
+            <div class="solution-deadline">⏱ זמן: עד 48 שעות</div>
+            <div class="solution-price">2,990 ₪</div>
+            <a href="#" class="btn btn-outline solution-cta" data-section="6">להזמין →</a>
+          </div>
+
+          <!-- חבילה 2 -->
+          <div class="solution-card card reveal featured-card" id="pkg-2">
+            <div class="featured-badge">★ פופולרי</div>
+            <div class="solution-icon">🎬✨</div>
+            <div class="solution-tag tag-pro">פרו</div>
+            <h3>תבנית + התאמות אישיות</h3>
+            <p class="solution-pitch">כל מה שבחבילת «סטארט», בתוספת אפשרות לשינויים לפי העסק שלך: הוספת מסכים, נגני וידאו, סליידרים, הרחבת רקע הוידאו. האתר הופך באמת לשלך.</p>
+            <ul class="solution-features">
+              <li>הכל מחבילת «סטארט»</li>
+              <li>הוספת מסכים / אזורים לפי דרישה</li>
+              <li>נגן וידאו וסליידרים לתוכן שלך</li>
+              <li>הרחבת רקע הווידאו הקולנועי</li>
+              <li>עד 3 סבבי תיקונים</li>
+              <li>תמיכה עדיפותית 30 יום</li>
+            </ul>
+            <div class="solution-deadline">⏱ זמן: עד 48 שעות</div>
+            <div class="solution-price">מ-4,399 ₪</div>
+            <a href="#" class="btn btn-primary solution-cta" data-section="6">להזמין →</a>
+          </div>
+
+          <!-- חבילה 3 -->
+          <div class="solution-card card reveal" id="pkg-3">
+            <div class="solution-icon">🏆</div>
+            <div class="solution-tag tag-custom">אקסקלוסיב</div>
+            <h3>קולנוע-לנדינג אישי</h3>
+            <p class="solution-pitch">האתר נבנה מאפס למותג שלך: עיצוב ייחודי, קונספט וידאו מקורי, קליפי VEO בלעדיים, מיתוג, אנימציות. רמה עולמית ללא פשרות.</p>
+            <ul class="solution-features">
+              <li>ניתוח מתחרים + אסטרטגיה</li>
+              <li>עיצוב ולוגו ייחודיים</li>
+              <li>קליפי VEO 3.1 בלעדיים</li>
+              <li>Canvas ScrollEngine 672+ פריימים</li>
+              <li>אינטגרציה CRM + בוט טלגרם</li>
+              <li>SEO + Schema.org + אנליטיקה</li>
+            </ul>
+            <div class="solution-deadline">⏱ זמן: נקבע בהתאמה אישית</div>
+            <div class="solution-price">מ-8,999 ₪</div>
+            <a href="#" class="btn btn-outline solution-cta" data-section="6">לדון →</a>
+          </div>
+
+        </div>
+        <div class="niches-section reveal" style="margin-top:16px">
+          <h3 class="niches-title">שירותים <span class="gold-text">נוספים</span></h3>
+          <p style="text-align:center;margin-bottom:8px">דומיין + אחסון + פרסום — <strong class="gold-text">מ-149 ₪</strong></p>
+          <p style="text-align:center;font-size:12px">כמו כן: תחזוקה ועדכון האתר, חידוש דומיין, שירות טכני.</p>
+      </div>
+    </section>
+
+    <!-- 4: תיק עבודות -->
+    <section class="page" id="page-4">
+      <div class="page-inner" style="padding-bottom:0">
+        <h2 class="section-title">תבניות <span class="gold-text">אתרים</span></h2>
+        <p class="section-sub">בחר את האתר שלך!</p>
+      </div>
+      <div class="cases-carousel-wrap">
+        <div class="cases-scroll" id="casesScroll">
+          <a href="https://unityspirit.github.io/europa-clinic-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/europa-clinic.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🏥 רפואה</div>
+              <h3>לקוסמטולוגיה ורפואה</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/elite-detailing-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/elite-detailing.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🚗 רכב</div>
+              <h3>לדיטיילינג, שירותי רכב ושטיפת מכוניות</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/stroyka-pro-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/stroyka-pro.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🏗️ בנייה</div>
+              <h3>לחברות בנייה, שיפוצים ועבודות גימור</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/arch-design-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/arch-design.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🎨 עיצוב</div>
+              <h3>לחברות עיצוב, עבודות גימור פנימיות</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/lumiere-clinic-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/lumiere-clinic.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">💊 רפואה v2</div>
+              <h3>לקליניקות לרפואה אסתטית וקוסמטולוגיה</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/elite-detailing-v2-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/elite-detailing-v2.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🚗 רכב v2</div>
+              <h3>לדיטיילינג, מוסכים ושטיפת מכוניות</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/fur-natural-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/fur-natural.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🧥 אופנה</div>
+              <h3>לחברות פרווה, בוטיקים, חנויות בגדים</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+          <a href="https://unityspirit.github.io/zksk-il/" target="_blank" class="case-card card">
+            <div class="case-video-wrap"><video src="videos/zksk.mp4" muted loop playsinline preload="metadata"></video></div>
+            <div class="case-info">
+              <div class="case-niche">🏢 בנייה v2</div>
+              <h3>לקבלנים, יזמים וחברות בנייה</h3>
+              <span class="case-link">לצפות בפרויקט →</span>
+            </div>
+          </a>
+        </div>
+        <div class="cases-nav">
+          <button class="cases-arrow cases-prev" id="casesPrev" aria-label="אחורה">‹</button>
+          <span class="cases-hint">← גלול →</span>
+          <button class="cases-arrow cases-next" id="casesNext" aria-label="קדימה">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5: תהליך עבודה -->
+    <section class="page" id="page-5">
+      <div class="page-inner">
+        <h2 class="section-title">תהליך <span class="gold-text">העבודה</span></h2>
+        <p class="section-sub">שקיפות מלאה מהבריפינג ועד לתוצאה המוגמרת</p>
+        <div class="process-flow">
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">01</div>
+            <div class="step-icon">📋</div>
+            <h3>בריפינג</h3>
+            <p>שיחה או פגישה במשרד. צוללים לעסק: מי הלקוח, מי המתחרה, מה מוכרים, מה המחיר. 60 דקות — ואנחנו יודעים את הכל.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">02</div>
+            <div class="step-icon">🔍</div>
+            <h3>ניתוח הנישה</h3>
+            <p>חוקרים את 5 המתחרים המובילים. מזהים נקודות חולשה. קובעים מה צריך להציג באתר כדי שהלקוח יבחר בך — ולא בהם.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">03</div>
+            <div class="step-icon">✏️</div>
+            <h3>עיצוב UX/UI</h3>
+            <p>אב-טיפוס → מערכת עיצוב → ויזואליזציה מלאה של כל המסכים. אישור ב-1–2 סבבים. בלי "תעשו כמו אפל" בלי תיק מפרט.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">04</div>
+            <div class="step-icon">⚙️</div>
+            <h3>הרכבה</h3>
+            <p>קוד, רקע וידאו קולנועי, אינטגרציית טפסים ל-CRM, אופטימיזציית SEO, מותאם. בדיקה על 12 מכשירים.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">05</div>
+            <div class="step-icon">🚀</div>
+            <h3>השקה</h3>
+            <p>העלאה, הגדרת דומיין. תמיכה 30 יום לאחר ההשקה כלולה.</p>
+          </div>
+        </div>
+        <div class="process-guarantee card reveal">
+          <span class="guarantee-icon">⚡</span>
+          <div><strong class="gold-text">מהפנייה ועד לאתר מוגמר — עד 48 שעות!</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6: צור קשר -->
+    <section class="page" id="page-6">
+      <div class="page-inner">
+        <h2 class="section-title">השאר פנייה ל<span class="gold-text">ניתוח הנישה</span></h2>
+        <p class="section-sub">אבחון חינם: נראה לך מה העסק שלך מפסיד בגלל האתר הנוכחי</p>
+        <div class="contact-layout">
+          <form class="contact-form card reveal" id="contactForm">
+            <input type="text" placeholder="השם שלך והחברה" required id="inputName">
+            <input type="tel" placeholder="+972-__-___-____" required id="inputPhone">
+            <select id="inputNiche">
+              <option value="">הנישה שלך</option>
+              <option>רפואה / יופי</option>
+              <option>מסעדות / HoReCa</option>
+              <option>בנייה / שיפוצים</option>
+              <option>אדריכלות / עיצוב</option>
+              <option>IT / ייעוץ</option>
+              <option>רכב / דיטיילינג</option>
+              <option>כושר / ספורט</option>
+              <option>חינוך</option>
+              <option>תיירות / מלונות</option>
+              <option>ייצור</option>
+              <option>אחר</option>
+            </select>
+            <select id="inputBudget">
+              <option value="">תקציב לאתר</option>
+              <option>2,000 – 4,000 ₪</option>
+              <option>4,000 – 7,000 ₪</option>
+              <option>7,000 – 12,000 ₪</option>
+              <option>מעל 12,000 ₪</option>
+            </select>
+            <textarea placeholder="מה אתה רוצה לקבל מהאתר? מהו האתר הנוכחי (קישור)?" rows="3" id="inputMessage"></textarea>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">לקבל אבחון נישה חינם</button>
+            <p class="form-note">נענה תוך 2 שעות בשעות העבודה. ללא ספאם.</p>
+          </form>
+          <div class="contact-info">
+            <div class="card contact-card reveal">
+              <div class="contact-row"><span class="contact-icon">📍</span><div><strong>משרד</strong><span>חיפה, רח׳ בן גוריון 49<br>מחוז חיפה, 3100000</span></div></div>
+              <div class="contact-row"><span class="contact-icon">📞</span><div><strong>טלפון</strong><a href="tel:+97240000000">+972 (4) 000-0000</a></div></div>
+              <div class="contact-row"><span class="contact-icon">📧</span><div><strong>אימייל</strong><a href="mailto:info@globalplus.co.il">info@globalplus.co.il</a></div></div>
+              <div class="contact-row"><span class="contact-icon">💬</span><div><strong>טלגרם</strong><a href="https://t.me/globalplus" target="_blank">@globalplus</a></div></div>
+              <div class="contact-row"><span class="contact-icon">🕐</span><div><strong>שעות עבודה</strong><span>א׳–ה׳: 09:00 – 19:00<br>ו׳: 09:00 – 14:00</span></div></div>
+            </div>
+            <div class="card contact-legal reveal">
+              <p class="legal-title">פרטי חברה</p>
+              <p>גלובל פלוס בע״מ</p>
+              <p>חיפה, רח׳ בן גוריון 49</p>
+              <p>ח.פ.: לפי בקשה</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end scroll-container -->
+
+  <script src="app.js"></script>
+</body>
+</html>
